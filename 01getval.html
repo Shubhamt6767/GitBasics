@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <script src="Script/jquery-3.6.0.js"></script>
+     <script>
+          $(document).ready(function () {
+               var b = "";
+               $("#btn").click(function () {
+                    let r = $('#rd1');
+                    r.prop('ckecked', true);
+               });
+          });
+     </script>
+</head>
+
+<body>
+     
+<form id="frm" action="a.html">
+<input id="rd1" type="radio" name="ch" value="+"/>+
+<input  id="rd2" type="radio" name="ch" value="-"/>-
+<input type="button" id="btn" value="checked r1"/>
+</form>
+     <div id="DD">dd</div>
+</body>
+
+</html>

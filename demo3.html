@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="Script\jquery-3.6.0.js"></script>
+     <script>
+          $(()=>{
+               $("#btn1").click(()=>{$("a").before("<b>Before</b>")}),
+               $("#btn2").click(()=>{$("a").after("<b>After</b>")})
+          })
+     </script>
+</head>
+<body>
+     <a href="vidhyanidhi.com" alt="jquery">link</a>
+     <br>
+     <br>
+     <button id="btn1">insert before</button>
+     <button id="btn2">insert after</button>
+</body>
+</html>

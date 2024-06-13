@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="Script\jquery-3.6.0.js"></script>
+    <script>
+     $(()=>{
+          $("#btn").click(()=>{
+               var sum=0;
+               var a=$("input[name='ch1']").prop("checked")
+               var b=$("input[name='ch2']").prop("checked")
+               var t=$('input[name=ch1]:checked').val();
+               alert(t);
+               if(a)
+               {
+                    s1=$('input[name=ch1]:checked').val()
+                    alert(s1);
+                    alert(a)
+                    sum =sum+parseInt(s1)               
+               }
+
+               if(b)
+               {
+                    var s2=$('input[name=ch2]:checked').val()
+                    sum=sum+parseInt(s2)
+               }
+               $('#dd').text("ans="+sum);
+
+          });
+     });
+    </script>
+</head>
+<body>
+     <pre>
+          <form id="frm" name="frm"   action="a.html">C prog.
+               <input type="checkbox" name="ch1" value="200"/>frontend
+               <input type="checkbox" name="ch2" value="450"/>Backend
+               <input type="button" id="btn" value="GetData">
+          </form>
+     </pre>
+     <div id="dd">Answer</div>
+</body>
+</html>
